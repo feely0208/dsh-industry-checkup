@@ -13,6 +13,7 @@ cnt(){ echo "$J" | python3 -c "import json,sys;d=json.load(sys.stdin);print(len(
 [ "$(cnt HR-)" -gt 0 ] && ok "招聘命中" || bad "招聘漏报"
 [ "$(cnt MFG-)" -gt 0 ] && ok "制造命中" || bad "制造漏报"
 [ "$(cnt RE-)" -gt 0 ] && ok "房产命中" || bad "房产漏报"
+[ "$(cnt ARC-)" -gt 0 ] && ok "档案命中" || bad "档案漏报"
 P=$(node bin/cli.mjs --root tests/fixtures/pass --json 2>/dev/null | python3 -c "import json,sys;print(json.load(sys.stdin).get('total'))")
 [ "${P:-1}" = "0" ] && ok "干净样本 0 误报" || bad "干净样本误报 $P"
 O=$(node bin/cli.mjs --root tests/fixtures/fail --industry tax --json 2>/dev/null | python3 -c "import json,sys;d=json.load(sys.stdin);print(len(d.get('results',[])))")
