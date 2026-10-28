@@ -1,0 +1,4 @@
+# @deepwhale-cn/dsh-industry-checkup 的组合层
+- insert:
+    - id: industry-checkup
+      name: '@deepwhale-cn/dsh-industry-checkup'
