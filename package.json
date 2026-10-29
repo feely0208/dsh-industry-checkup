@@ -1,7 +1,7 @@
 {
   "name": "@deepwhale-cn/dsh-industry-checkup",
-  "version": "0.2.0",
-  "description": "深鲸行业合规体检：一个面板管六个行业（医疗/财税/招聘/制造/房产/档案），按法规出处出命中与修复建议",
+  "version": "0.3.0",
+  "description": "深鲸行业合规体检：一个面板管七个行业（医疗/财税/招聘/制造/房产/档案/工程），按法规出处出命中与修复建议",
   "type": "module",
   "license": "MIT",
   "keywords": [
@@ -55,7 +55,8 @@
     "@deepwhale-cn/dsh-industry-hr": "^0.1.0",
     "@deepwhale-cn/dsh-industry-manufacturing": "^0.1.0",
     "@deepwhale-cn/dsh-industry-realestate": "^0.1.0",
-    "@deepwhale-cn/dsh-industry-archive": "^0.1.0"
+    "@deepwhale-cn/dsh-industry-archive": "^0.1.0",
+    "@deepwhale-cn/dsh-industry-construction": "^0.1.0"
   },
   "peerDependencies": {
     "@deepseek-ai/dsh-skill": "*"
